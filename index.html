@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
-        <header >
+        <header>
             <a href="#" class="logo" style="background-color: #ffffff00;"><img src="./assets/logomlg.d7f343ebdf0b89e77599.png" alt="logo"/></a>
 
             <div class="bx bx-menu" id="menu-icon"></div>
@@ -24,6 +24,17 @@
             </ul>
             <div class="header-btn">
                 <a href="#form-contain" class="book">Rent a Car</a>
+                <!-- <a href="#form-contain" class="button-wrapper">
+                    <span class="dot dot-1"></span>
+                    <span class="dot dot-2"></span>
+                    <span class="dot dot-3"></span>
+                    <span class="dot dot-4"></span>
+                    <span class="dot dot-5"></span>
+                    <span class="dot dot-6"></span>
+                    <span class="dot dot-7"></span>
+                    <span class="button" style="background-color: yellow; border-radius: 20px; height: 30px; width: 120px;" >Rent a Car</span>
+                </a>
+                <div id="circle" class="circle" style="background-color: yellow;"></div> -->
             </div>
         </header>
 
@@ -32,6 +43,35 @@
                 <h1><span>Looking</span> to <br> rent a car ?</h1>
                 <p>Book affordable and premium cars with simple steps. </p>
             </div>
+            <!-- <div>
+                <div class="imgtrans">
+                    <div class="container">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <div class="radio-group"style="display: flex;">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bookingType" id="local" value="local" onchange="toggleFields()">
+                                    <label class="form-check-label" for="local">Local Cabs</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bookingType" id="airport" value="airport" onchange="toggleFields()">
+                                    <label class="form-check-label" for="airport">Airport Transfer</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bookingType" id="outstation" value="outstation" onchange="toggleFields()">
+                                    <label class="form-check-label" for="outstation">Outstation Cab</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="fieldsContainer" class="mt-4"></div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+                    </form>
+                    
+                </div>
+            </div> -->
+            
             <!-- <div class="form-container">
                 <form action="">
                     <div class="input-box">
@@ -89,6 +129,31 @@
                         
                     </div>
         </section> -->
+
+        <section class="newform">
+            <form id="bookingForm">
+                <div class="form-group">
+                    <div class="radio-group"style="display: flex;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="bookingType" id="local" value="local" onchange="toggleFields()">
+                            <label class="form-check-label" for="local">Local Cabs</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="bookingType" id="airport" value="airport" onchange="toggleFields()">
+                            <label class="form-check-label" for="airport">Airport Transfer</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="bookingType" id="outstation" value="outstation" onchange="toggleFields()">
+                            <label class="form-check-label" for="outstation">Outstation Cab</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fieldsContainer" class="mt-4"></div>
+
+            </form>
+
+        </section>
             <!-- Rent data section -->
         <section class="ride" id="ride" style="padding: 50px 100px;;">
             <div class="heading">
@@ -166,7 +231,7 @@
                 
                 <div class="box">
                     <div class="box-img">
-                        <img src="./assets/istockphoto-1285902985-612x612.jpg" alt="">
+                        <img src="./assets/images.jpeg" alt="">
                     </div>
                     <!-- <p>Tempo Traveller</p> -->
                     <h3>Tempo Traveller</h3>
@@ -263,7 +328,29 @@
                 <h1>What Our Customers Say</h1>
             </div>
             <div class="review-container">
+                <div class="box" style="border-radius: 20px; border: 3px solid var(--main-color);">
+                    <div class="rev-img">
+                        <img src="./assets/ref2.jpg" alt="">
+                    </div>
+                    <h2>Aindrita Ray</h2>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>It was such a wonderfull and safe ride with MLG, I would also recommend this to people i know for your best services.</p>
+                </div>
+
                 <div class="box" style="border-radius: 20px;">
+                    <video width="320" height="240" poster="./assets/Screenshot 2024-05-11 053731.png" controls>
+                        <source src="./assets/WhatsApp Video 2024-04-22 at 12.21.46 PM.mp4" type="video/mp4">
+                    </video>    
+                    
+                    
+                </div>
+                <div class="box" style="border-radius: 20px; border: 3px solid var(--main-color);">
                     <div class="rev-img">
                         <img src="./assets/ref1.jpg" alt="">
                     </div>
@@ -275,36 +362,11 @@
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half' ></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit ullam ab cum molestias reprehenderit</p>
+                    <p>I wish MLG the best for their services. I felt relaxed and the hospitality was at its best. wish you all the best!</p>
                 </div>
-                <div class="box" style="border-radius: 20px;">
-                    <div class="rev-img">
-                        <img src="./assets/ref2.jpg" alt="">
-                    </div>
-                    <h2>Aindrita Ray</h2>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star-half' ></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit ullam ab cum molestias reprehenderit</p>
-                </div>
-                <div class="box" style="border-radius: 20px;">
-                    <div class="rev-img">
-                        <img src="./assets/ref3.jpg" alt="">
-                    </div>
-                    <h2>Name</h2>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star-half' ></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit ullam ab cum molestias reprehenderit</p>
-                </div>
+
+                
+                
             </div>
         </section>
 

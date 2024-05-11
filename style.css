@@ -8,7 +8,7 @@
     list-style: none;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    background-color: #161616;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -37,16 +37,48 @@ section {
 h2 {
     text-align: center;
 }
+
+/* .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: 10;
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 24px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
+}
+.button-wrapper {
+    position: relative;
+}
+
+.button{
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    appearance: none;
+    display: inline-block;
+} */
+
 .radio-group label {
     display: flex;
     padding: 10px 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
+    color: #000;
+    background-color: #ffeb3b ;
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 24px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
 }
 
 .radio-group label:hover {
-    background-color: #f0f0f0;
+    /* background-color: var(--main-color); */
+    color: #000;
 }
 
 .radio-group input[type="radio"] {
@@ -54,8 +86,8 @@ h2 {
 }
 
 .radio-group input[type="radio"]:checked + label {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--main-color);
+    color: var(--text-color);
 }
 
 #fieldsContainer {
@@ -75,8 +107,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1e1e1e;
+    background-color: #1e1e1ecf;
     padding: 15px 100px;
+    box-shadow: 0px 0px 8px 0px #1e1e1e inset, 0px 0px 24px 0px #3e3e3e, 0px 0px 8px 0px #75757542;
 }
 .logo img {
     width: 50px;
@@ -85,11 +118,15 @@ header {
 
 .navbar {
     display: flex;
+    background-color: #00000000;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0003);
     
 }
 
 .navbar li {
     position: relative;
+    background-color: #00000000;
+    
 }
 
 .navbar a{
@@ -98,7 +135,8 @@ header {
     color: var(--text-color);
     font-weight: 500;
     border-radius: 10px;
-    background-color: #1e1e1e;
+    background-color: #00000000;
+    
     
 }
 .navbar a::after {
@@ -134,10 +172,11 @@ header {
     background: var(--main-color);
     color: #000;
     border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 24px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
 }
 .header-btn .book:hover {
-    background: #424247;
-    color: #fff;
+    background: #ffe600;
+    color: #000;
     border-radius: 0.5rem;
 }
 
@@ -183,6 +222,7 @@ header {
     left: 100px;
     padding: 20px;
     border-radius: 0.5rem;
+    border: 1px solid #fbc342;
 }
 .form-contain {
     display: grid;
@@ -191,17 +231,19 @@ header {
     align-items: center;
     justify-content: center;
     align-items: center;
+    
 }
 
 
 /* Form container styling */
-.imgtrans {
+/* .imgtrans {
     border-radius: 20px;
-    background-color: #f8f9fa;
+    background-color: #ffffff00;
     padding: 15px;
     height: 600px;
+    width: 300px;
     box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Tab styling */
 .tab {
@@ -249,17 +291,17 @@ header {
 
 /* Button styling */
 .btn-primary {
-    background-color: #424247;
-    border: none;
+    background-color: #ffeb3b;
+    display: block;;
+    margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #000;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 24px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
 }
 
-.btn-primary:hover {
-    background-color: #424247;
-}
+
 
 .input-box{
     flex: 1 1 7rem;
@@ -324,6 +366,7 @@ header {
 .heading h1{
     font-size: 2rem;
     color: #fff;
+    
 }
 .ride-container{
     display: grid;
@@ -416,15 +459,18 @@ header {
 .services-container .box .btn{
     display: flex;
     justify-content: center;
-    background: #424247;
-    color: #fff;
+    background: #fff;
+    color: #000;
     padding: 10px;
     border-radius: 0.5rem;
+    
+
 }
 
 .services-container .box .btn:hover{
     background: var(--main-color);
     color: #000;
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 24px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
 }
 
 .about-container{
@@ -571,7 +617,7 @@ header {
         left: 0;
         display: flex;
         flex-direction: column;
-        background:#fff;
+        background-color: #161616eb;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
         transition: 0.2s ease;
         text-align: left;
@@ -653,7 +699,13 @@ header {
     padding: 30px;
     margin: 30px;
     background-color: var(--main-color);
+    border-radius: 20px;
+    
 }
+.grid-content .boxs:hover{
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 24px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
+}
+
 .grid-content .boxs h1{
     background-color: var(--main-color);
     color: #000;
@@ -671,4 +723,15 @@ header {
 
 .contact {
     background-color: var(--main-color);
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 12px 0px #fdeb50, 0px 0px 8px 0px #ffffff42;
+}
+
+.newform {
+    margin-left: 430px;
+    border: 1px solid var(--main-color);
+    margin-right: 430px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px #fdfca9 inset, 0px 0px 8px 0px #ffeb3b, 0px 0px 8px 0px #ffffff42;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }

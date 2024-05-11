@@ -6,7 +6,7 @@ function toggleFields() {
     if (bookingType === "local") {
         fieldsContainer.innerHTML = `
             <div class="form-group" style="padding:10px;">
-                <label for="pickupLocation"></label>
+                <label for="pickupLocation">Pickup Location:</label>
                 <input type="text" class="form-control" id="pickupLocation" name="pickupLocation" placeholder="Enter Pickup Location" >
             </div>
             <div class="form-group">
@@ -25,6 +25,8 @@ function toggleFields() {
                 <label for="pickupTime">Pickup Time:</label>
                 <input type="time" class="form-control" id="pickupTime" name="pickupTime">
             </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Book Now</button>
         `;
     } else if (bookingType === "airport") {
         fieldsContainer.innerHTML = `
@@ -44,6 +46,8 @@ function toggleFields() {
                 <label for="pickupTime">Pickup Time:</label>
                 <input type="time" class="form-control" id="pickupTime" name="pickupTime">
             </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Book Now</button>
         `;
     } else if (bookingType === "outstation") {
         fieldsContainer.innerHTML = `
@@ -75,6 +79,8 @@ function toggleFields() {
                 <label for="dropTime">Drop Time:</label>
                 <input type="time" class="form-control" id="dropTime" name="dropTime">
             </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Book Now</button>
         `;
     }
     fieldsContainer.classList.toggle("show", true);
@@ -93,6 +99,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+//button-------------------------------------------------------------
+
+// var kinet = new Kinet({
+//     acceleration: 0.02,
+//     friction:0.25,
+//     names: ['x', 'y'],
+// });
+// var circle = document.getElementById('circle');
+// kinet.on('tick', function (instances) {
+//     circle.style.transform = `translate3d(${instances.x.current}px, ${instances.y.current}px, 0) rotateX(${instances.x.velocity /2}deg rotateY(${instances.y.velocity /2}deg)`;
+// });
+// document.addEventListener('mousemove', function (event){
+//     kinet.animate('x', event.clientX - window.innerWidth / 2);
+//     kinet.animate('y', event.clientY - window.innerWidth / 2);
+// });
+// kinet.on('start', function () {
+//     console.log('start');
+// })
+// kinet.on('end', function () {
+//     console.log('end');
+// })
 
 //Menu----------------------------------------------------------------
 let menu = document.querySelector('#menu-icon');
@@ -123,7 +151,6 @@ sr.reveal('.content .hero', {delay: 200, origin: 'right'})
 sr.reveal('.about .heading', {delay: 200, origin: 'top'})
 sr.reveal('.about .about-container', {delay: 200, origin: 'top'})
 sr.reveal('.services-container .box', {delay: 200, origin: 'left'})
-
 sr.reveal('.packages .boxs', {delay: 200, origin: 'top'})
 sr.reveal('.info .box', {delay: 200, origin: 'left'})
 sr.reveal('.review-container .box', {delay: 200, origin: 'bottom'})
