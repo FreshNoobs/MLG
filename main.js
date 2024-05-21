@@ -5,79 +5,79 @@ function toggleFields() {
 
     if (bookingType === "local") {
         fieldsContainer.innerHTML = `
-            <div class="form-group" style="padding:10px;">
-                <label for="pickupLocation">Pickup Location:</label>
-                <input type="text" class="form-control" id="pickupLocation" name="pickupLocation" placeholder="Enter Pickup Location" >
+            <div class="form-group" style="display:block; padding:10px;">
+                <label class="display:flex; justify-content:start;"for="pickupLocation">Pickup Location:</label>
+                <input type="text" class="form-control" style="width:100%" id="pickupLocation" name="pickupLocation" >
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content: space-around; padding:10px;">
                 <label for="dropLocation">Drop Location:</label>
-                <input type="text" class="form-control" id="dropLocation" name="dropLocation">
+                <input type="text" class="form-control" style="width:100%" id="dropLocation" name="dropLocation">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around; padding:10px;">
                 <label for="numberOfDays">Number of Days:</label>
-                <input type="number" class="form-control" id="numberOfDays" name="numberOfDays">
+                <input type="number" class="form-control" style="width:100%" id="numberOfDays" name="numberOfDays">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around; padding:10px;">
                 <label for="pickupDate">Pickup Date:</label>
-                <input type="date" class="form-control" id="pickupDate" name="pickupDate">
+                <input type="date" class="form-control" style="width:100%" id="pickupDate" name="pickupDate">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around; padding:10px;">
                 <label for="pickupTime">Pickup Time:</label>
-                <input type="time" class="form-control" id="pickupTime" name="pickupTime">
+                <input type="time" class="form-control" style="width:100%" id="pickupTime" value="00:00" name="pickupTime">
             </div>
             
-            <button type="submit" class="btn btn-primary btn-block">Book Now</button>
+            <button type="submit" class="btn btn-primary btn-block" style="">Book Now</button>
         `;
     } else if (bookingType === "airport") {
         fieldsContainer.innerHTML = `
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="pickupLocation">Pickup Location:</label>
-                <input type="text" class="form-control" id="pickupLocation" name="pickupLocation">
+                <input type="text" class="form-control" style="width:100%" id="pickupLocation" name="pickupLocation">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="dropLocation">Drop Location:</label>
-                <input type="text" class="form-control" id="dropLocation" name="dropLocation">
+                <input type="text" class="form-control" style="width:100%" id="dropLocation" name="dropLocation">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="pickupDate">Pickup Date:</label>
-                <input type="date" class="form-control" id="pickupDate" name="pickupDate">
+                <input type="date" class="form-control" style="width:100%" id="pickupDate" name="pickupDate">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="pickupTime">Pickup Time:</label>
-                <input type="time" class="form-control" id="pickupTime" name="pickupTime">
+                <input type="time" class="form-control" style="width:100%" id="pickupTime"  value="00:00" name="pickupTime">
             </div>
             
             <button type="submit" class="btn btn-primary btn-block">Book Now</button>
         `;
     } else if (bookingType === "outstation") {
         fieldsContainer.innerHTML = `
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="pickupLocation">Pickup Location:</label>
-                <input type="text" class="form-control" id="pickupLocation" name="pickupLocation">
+                <input type="text" class="form-control" style="width:100%; height:50%; font-size:1rem;" id="pickupLocation" name="pickupLocation">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="dropLocation">Drop Location:</label>
-                <input type="text" class="form-control" id="dropLocation" name="dropLocation">
+                <input type="text" class="form-control" style="width:100%" id="dropLocation" name="dropLocation">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="numberOfDays">Number of Days:</label>
-                <input type="number" class="form-control" id="numberOfDays" name="numberOfDays">
+                <input type="number" class="form-control" style="width:100%" id="numberOfDays" name="numberOfDays">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="pickupDate">Pickup Date:</label>
-                <input type="date" class="form-control" id="pickupDate" name="pickupDate">
+                <input type="date" class="form-control" style="width:100%" id="pickupDate" name="pickupDate">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="pickupTime">Pickup Time:</label>
-                <input type="time" class="form-control" id="pickupTime" name="pickupTime">
+                <input type="time" class="form-control" style="width:100%" id="pickupTime"  value="00:00" name="pickupTime">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="dropDate">Drop Date:</label>
-                <input type="date" class="form-control" id="dropDate" name="dropDate">
+                <input type="date" class="form-control" style="width:100%" id="dropDate" name="dropDate">
             </div>
-            <div class="form-group">
+            <div class="form-group" style="display:block; justify-content:space-around;padding:10px;">
                 <label for="dropTime">Drop Time:</label>
-                <input type="time" class="form-control" id="dropTime" name="dropTime">
+                <input type="time" class="form-control" style="width:100%" id="dropTime"  value="00:00" name="dropTime">
             </div>
             
             <button type="submit" class="btn btn-primary btn-block">Book Now</button>
@@ -100,27 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//button-------------------------------------------------------------
 
-// var kinet = new Kinet({
-//     acceleration: 0.02,
-//     friction:0.25,
-//     names: ['x', 'y'],
-// });
-// var circle = document.getElementById('circle');
-// kinet.on('tick', function (instances) {
-//     circle.style.transform = `translate3d(${instances.x.current}px, ${instances.y.current}px, 0) rotateX(${instances.x.velocity /2}deg rotateY(${instances.y.velocity /2}deg)`;
-// });
-// document.addEventListener('mousemove', function (event){
-//     kinet.animate('x', event.clientX - window.innerWidth / 2);
-//     kinet.animate('y', event.clientY - window.innerWidth / 2);
-// });
-// kinet.on('start', function () {
-//     console.log('start');
-// })
-// kinet.on('end', function () {
-//     console.log('end');
-// })
 
 //Menu----------------------------------------------------------------
 let menu = document.querySelector('#menu-icon');
@@ -148,8 +128,8 @@ const sr = ScrollReveal ({
 sr.reveal('.text', {delay: 200, origin: 'top'})
 sr.reveal('.ride-container .box', {delay: 200, origin: 'left'})
 sr.reveal('.content .hero', {delay: 200, origin: 'right'})
-sr.reveal('.about .heading', {delay: 200, origin: 'top'})
-sr.reveal('.about .about-container', {delay: 200, origin: 'top'})
+// sr.reveal('.about .heading', {delay: 200, origin: 'top'})
+// sr.reveal('.about .about-container', {delay: 200, origin: 'top'})
 sr.reveal('.services-container .box', {delay: 200, origin: 'left'})
 sr.reveal('.packages .boxs', {delay: 200, origin: 'top'})
 sr.reveal('.info .box', {delay: 200, origin: 'left'})
